@@ -1,0 +1,536 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-color: #000;
+    --while-color: #fff;
+    --gray-color: #ccc;
+    --red-color: #f44336;
+    --blue-color: #009688;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+
+.col-third {
+    width: 33.33333%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--while-color);
+    background-color: var(--black-color);
+    text-decoration: none;
+    padding: 10px 16px;
+    text-align: center;
+    margin-top: 15px;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--gray-color);
+    color: var(--black-color);
+}
+
+.pull-right {
+    float: right !important;
+}
+
+
+/* This is start CSS of Main */
+#main {
+
+}
+/* This is end of CSS of Main */
+
+/* This is start CSS of Header */
+#header {
+    position: fixed;
+    height: 46px;
+    width: 100%;
+    background-color: var(--black-color);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: var(--while-color);
+    text-transform: uppercase;
+}
+
+#nav li a {
+    display: inline-block;
+    /* color: var(--while-color); */
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 20px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+
+}
+
+
+#header .mobile-menu-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: var(--gray-color);
+    color: var(--black-color);
+}
+
+#header .search-btn:hover {
+    background-color: var(--red-color);
+    cursor: pointer;
+}
+
+#header .menu-icon,
+#header .search-icon {
+    color: var(--while-color);
+    line-height: 46px;
+    font-size: 20px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover {
+    background-color: var(--gray-color);
+    color: var(--black-color);
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 160px;
+    background-color: var(--while-color);
+    color: var(--black-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#nav .subnav a {
+    color: var(--black-color);
+    line-height: 38px;
+    padding: 0 12px;
+}
+
+/* This is end CSS of Header */
+
+/* This is start CSS of Slider */
+#slider {
+    position: relative;
+    padding-top: 50%;
+    margin-top: 46px; 
+    background: url('../img/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: var(--while-color);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+    box-shadow: 0 0 0 var(--black-color);
+}
+/* This is end CSS of Slider */
+
+/* This is start CSS of Content */
+#content {
+    
+}
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .member-list {
+    margin-top: 48px;
+    overflow: hidden;
+}
+
+#content .member-name {
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+#content .member-image {
+    width: 60%;
+    border-radius: 4px;
+}
+
+/* Tour section CSS */
+.tour-section {
+    background-color: var(--black-color);
+    color: var(--while-color);
+}
+
+.tickets-list {
+    margin-top: 40px;
+    background-color: var(--while-color);
+    list-style: none;
+    color: var(--black-color);
+}
+
+.tickets-list li {
+    font-size: 15px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.sold-out {
+    background-color: var(--red-color);
+    padding: 3px 4px;
+    color: var(--while-color);
+    margin-left: 16px;
+}
+
+.quantity {
+    background-color: var(--black-color);
+    color: var(--while-color);
+    float: right;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+/* Place CSS */
+.places-list {
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+} 
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: var(--while-color);
+    color: var(--black-color);
+    padding: 16px;
+    font-size: 15px;
+} 
+
+.place-heading {
+    font-size: 15px;
+} 
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+} 
+
+.place-desc {
+    margin-top: 15px;
+} 
+
+
+/* This is start CSS of Footer */
+#footer {
+
+}
+
+/* This is CSS Modal buy tickets */
+.modal-buy-tickets {
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: var(--while-color);
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header {
+    background-color: var(--blue-color);
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--while-color);
+    font-size: 30px;
+}
+
+.modal-header .modal-heading-icon {
+    margin-right: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--while-color);
+    padding: 12px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.modal-input {
+    border: 1px solid var(--gray-color);
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+
+.buy-tickets-btn {
+    width: 100%;
+    border: none;
+    background-color: var(--blue-color);
+    color: var(--while-color);
+    font-size: 15px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.buy-tickets-btn:hover {
+    opacity: 0.9;
+}
+
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196f3;
+}
+
+/* Contact form */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-controll {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--gray-color);
+}
+
+.contact-form  .form-submit-btn {
+    cursor: pointer;
+    display: block;
+    float: right;
+    background-color: var(--black-color);
+    color: var(--while-color);
+    border: 1px solid var(--black-color);
+    padding: 10px 16px;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+}
